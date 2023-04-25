@@ -150,6 +150,13 @@ body{
     font-weight: 700;
     
 }
+.Registrieren {
+    background-color: #cbb722;
+    font-weight: 200;
+    border-radius:5px ;
+    border-color: #ddd;
+    height: 35px;
+}
 
         </style>
     </head>
@@ -198,13 +205,13 @@ body{
         <div id="anmelden">
             <form action="anmelden.php" method="get">
                 <p class="Anmelden" > ANMELDENFORMULAR </p>
-                <input type="text" name="Name" placeholder="Benutzer Name" required minlength="3" required  /> <br>
+                <input type="text" name="Name" placeholder="Benutzer Name" size="30" required minlength="3" required  /> <br>
                 <br>
-                <input type="email" name="E-Mail" placeholder="Geben Sie Ihre E-Mail Adresse ein " required /> <br>
+                <input type="email" name="E-Mail" placeholder="Geben Sie Ihre E-Mail Adresse ein " size="30" required /> <br>
                 <br>
-                <input type="password" name="password" placeholder="Ihr Passwort eingeben" required /><br>
-                <br>
-                <input class="button" type="submit" value="Registrieren" />
+                <input type="password" name="password" placeholder="Ihr Passwort eingeben" size="30" required minlength="6" required /><br>
+                <br> 
+                <input class="Registrieren" type="submit" value="Registrieren" />
             </form>    
         </div>
        
