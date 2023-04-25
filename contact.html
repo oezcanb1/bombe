@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
     <html lang="de">
@@ -7,7 +6,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <title>Kontakt</title>
+            <title>contact</title>
  
 <style>
 body{
@@ -151,6 +150,13 @@ body{
     font-weight: 700;
     
 }
+.Registrieren {
+    background-color: #cbb722;
+    font-weight: 200;
+    border-radius:5px ;
+    border-color: #ddd;
+    height: 35px;
+}
 
         </style>
     </head>
@@ -196,24 +202,17 @@ body{
 
         
         </div>
-        <div class="container">
-            <form id="contact" action="" method="">
-                <h2>Contact Uns</h2>
-                <div class="form-control">
-                    <input placeholder="Nach-Vor Name" type="text" required autofocus>
-                </div>
-                <div class="form-control">
-                    <input placeholder="E-Mail" type="email" required>
-                </div>
-                <div class="form-control">
-                    <input placeholder="Thema" type="text" required>
-                </div>
-                <div class="form-control">
-                    <textarea placeholder="Bitte schreiben Sie Ihre Nachricht" required></textarea>
-                </div>
-                <div class="form-control">
-                    <button name="submit" type="submit" id="submit">Einreichen</button>
-                </div>
+        <div id="kontakt">
+            <form action="kontakt.php" method="get">
+                <p class="Kontakt" > KontaktFormular </p>
+                <input type="text" name="Name" placeholder="Vor-Nach Name" size="30" required minlength="3" required  /> <br>
+                <br>
+                <input type="email" name="E-Mail" placeholder="Geben Sie Ihre E-Mail Adresse ein " size="30" required /> <br>
+                <br>
+                <input type="text" name="textarea" placeholder="Bitte schreiben Sie Ihre Nachricht" size="60" required maxlength="600" required /><br>
+                <br> 
+                <input class="Einreichen" type="submit" value="Einreichen" />
+            </form>    
         </div>
        
     
