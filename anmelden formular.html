@@ -6,6 +6,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../css/site.css">
             <title>AnmeldenFormular</title>
  
 <style>
@@ -205,10 +206,14 @@ body{
         <div id="anmelden">
             <form action="anmelden.php" method="get">
                 <p class="Anmelden" > ANMELDENFORMULAR </p>
-                <input type="text" name="Name" placeholder="Benutzer Name" size="30" required minlength="3" required  /> <br>
+                <label>Vor und Nachname: </label>
+                <input type="text" name="Name" placeholder="Benutzer Name" size="30" required minlength="3" required  />
                 <br>
+                <br>
+                <label>Email Adresse: </label>
                 <input type="email" name="E-Mail" placeholder="Geben Sie Ihre E-Mail Adresse ein " size="30" required /> <br>
                 <br>
+                <label>Password: </label>
                 <input type="password" name="password" placeholder="Ihr Passwort eingeben" size="30" required minlength="6" required /><br>
                 <br> 
                 <input class="Registrieren" type="submit" value="Registrieren" />
