@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Startseite</title>
 <style>
+
 body {
   margin:15px;
   font-family:Arial}
-
+                                          /*Navigation Menu*/
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -34,7 +35,7 @@ body {
 .topnav .icon {
   display: none;
 }
-
+                                          /*Dropdown Produkte*/
 .dropdown {
   float: left;
   overflow: hidden;
@@ -82,7 +83,7 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+                                          /*Searchbar*/
 .searchbar{
   background-color: rgb(255, 255, 255);
   border-color: rgb(223, 208, 10);
@@ -102,16 +103,26 @@ body {
   background-color: rgb(247, 211, 9);
   opacity: 0.8;
 }
-
+                                          /*Logo*/
 .Logo {
-width:  500px;
-height: 275px;
+width:  700px;
+height: 400px;
 display: block;
 margin-top: 8px;
 margin-left:  auto;
 margin-right: auto;
 }
-
+                                          /*Begin Worts*/
+#Beginwords{
+  margin-top: 8px;
+  padding: 50px;
+  background-color: #bfbfbf;
+}
+.Welcome{
+  font-size: 25px;
+  font-weight: 300px;
+}
+                                          /*Navigation Menu in minimize*/
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -175,9 +186,9 @@ margin-right: auto;
   <img class="Logo" src="Logo.jpg">
 </section>
 
-<div style="padding-left:16px">
-  <h2>Özcan, Kristian und Tran</h2>
-  <p>Produkte Raten</p>
+<div id="Beginwords" >
+  <p class="Welcome">Willkommen zur unsere Webseite wo wir Ihr Leben einfacher machen </p>
+  <p class="Begin"> Produkte Raten </p>
   <p>HAHAHAHAH</p>
 </div>
 
