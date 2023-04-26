@@ -9,30 +9,31 @@
 <style>
 
 body {
-  background-color: #6fbdca;
   margin:15px;
-  font-family:Arial
+  font-family:Arial;
 
 }
+
                                           /*Navigation Menu*/
 .topnav {
   overflow: hidden;
-  background-color: #dfe3ea;
+  background-color: #aed2f4;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #fc8f00;
+  color: #161615;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  font-family: Arial;
   font-size: 19px;
+  font-weight: 300;
   
 }
 
 .active {
-  background-color: #082150;;
+  background-color: #1271f7;
   color: white;
 }
 
@@ -46,14 +47,14 @@ body {
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;    
+  font-size: 19px;    
   border: none;
   outline: none;
-  color: #fc8f00;
+  color: #100f0f;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+  font-family: Arial;
+  text-align: center;
 }
 
 .dropdown-content {
@@ -75,11 +76,12 @@ body {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
+  background-color: #a5d2f9;
   color: white;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover 
+{
   background-color: #ddd;
   color: black;
 }
@@ -112,8 +114,8 @@ body {
   opacity: 0.8;
 }
                                           /*Logo*/
-#Logo {
-width:  700px;
+.Logo {
+width:  400px;
 height: 400px;
 display: block;
 margin-top: 8px;
@@ -168,13 +170,16 @@ margin-right: auto;
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-  background-color: #000000;
-  color: white;
+  background-color: #1271f7;
+  font-size: 16px;
+  font-family: Arial;
+  color: black;
+  font-weight: bold;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   opacity: 0.8;
-  
+  margin-left: 75px;
 }
 
 /* The popup form - hidden by default */
@@ -240,7 +245,6 @@ margin-right: auto;
 
 <body>
 
-
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active"><b>Home</b></a>
   <a href="news.html" target="_blank"><b>News</b></a>
@@ -262,7 +266,7 @@ margin-right: auto;
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   <input class="searchbar" type="text" placeholder = "Search">
   <button class="searchsymbol" type="submit"><i class="fa fa-search"></i></button>
-  <button class="open-button" onclick="openForm()">Login</button>
+  <button class="open-button" onclick="openForm()">Anmelden</button>
 
   <div class="form-popup" id="myForm">
     <form action="/action_page.php" class="form-container">
@@ -291,7 +295,7 @@ margin-right: auto;
 </div>
 
 <div id="Logo">
-  <img src="/Pictures/programmers.jpg" >
+  <img class="Logo" src="logo team.png" >
 </div>
 
 <div id="Beginwords" >
