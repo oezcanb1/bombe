@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Anmeldeformular</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            body{
+                background:#bbb015;
+                font-size:10px;
+                font-family:Trebuchet MS;
+            }
+            #anmeldenformular{
+                
+                border-radius:10px;
+                background:#ffffff;
+                width:360px;
+                margin:auto;
+                margin-top:20px;
+                padding:15px;
+                text-align:center;
+            }
+            input, button
+            {
+                border-radius:5px;
+                border:none;
+                width:300px;
+                height:50px;
+                margin:20px 0px 20px 0px;
+                background:rgba(190, 25, 13, 0.5);
+                padding-left:15px;
+                font-style:italic;
+                
+            }
+            
+            .btn{
+                background:#868621;
+                color:white;
+            }
+            h3{
+                color:#333;
+                text-transform:uppercase;
+                font-size:20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="anmelden">
+            <form action="anmelden.php" method="get">
+                <h3>Anmeldeformular</h3>
+                <input type="text" name="Name" placeholder="Benutzer Name" required minlength="3"  /> <br>
+                
+                <input type="email" name="E-Mail" placeholder="Geben Sie Ihre E-Mail Adresse ein " required /> <br>
+                
+                <input type="password" name="password" placeholder="Ihr Passwort eingeben" /><br>
+                
+                <input class="button" type="submit" value="Registrieren" />
+            </form>
+            
+        </div>
+    
+    
+    </body>
+</html>
