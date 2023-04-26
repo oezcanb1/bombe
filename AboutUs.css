@@ -1,0 +1,22 @@
+body {
+    background-color: rgba(29, 199, 233, 0.789);
+}
+
+
+.tnt {
+    position: relative;
+    left: 10px;
+    top: -350px;
+}
+
+.kiko {
+    position: relative;
+    left: 350px;
+    top: 10px;
+}
+
+.özcan {
+    position: relative;
+    left: 1255px;
+    top: -750px;
+}
