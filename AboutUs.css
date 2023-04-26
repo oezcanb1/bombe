@@ -6,7 +6,7 @@ body {
 .tnt {
     position: relative;
     left: 10px;
-    top: -350px;
+    top: 10px;
 }
 
 .kiko {
@@ -18,5 +18,12 @@ body {
 .özcan {
     position: relative;
     left: 1255px;
-    top: -750px;
+    top: -720px;
+}
+
+.tim {
+    position: relative;
+    left: 780px;
+    top: -340px;
+    
 }
