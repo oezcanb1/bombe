@@ -1,11 +1,12 @@
 h1 {
-color:green
+color:rgb(13, 219, 64)
 }
 
 div {
-    color:blueviolet
+    color:rgb(237, 245, 24)
 }
 
 body {
-    background-color: rgb(76, 23, 126);
+    background-color: rgba(29, 201, 13, 0.789);
 }
+
