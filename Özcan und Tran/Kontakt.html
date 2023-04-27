@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<<<<<<< HEAD
     <title>Kontakt</title>
     <link rel="stylesheet" href="style.css">
+=======
+    <title>Startseite</title>
+    <link rel="stylesheet" href="/Özcan und Tran/style.css">
+>>>>>>> TNTran
 </head>
 <style>
   #Nname, select, textarea, #Vname,#Email {
-  font-family: Arial;
   font-size:15px;
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
@@ -39,7 +43,7 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
-.container {
+.Message{
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -58,7 +62,34 @@ input[type=submit]:hover {
 </style>
 
 <body>
+  <header>
+      <div class="wrapper">
+          </div>
+          <div class="navbar">
+              <div class="close-nav"><button>×</button></div>
+              <nav>
+                  <ul>
+                      <li class="logo"><a href="#"><img src="/Özcan und Tran/Bilder/logonavi.png"></a></li>
+                      <li><a href="/Özcan und Tran/startseiteOT.html">Home</a></li>
+                      <li><a href="/Özcan und Tran/news.html">News</a></li>
+                      <li><a href="/Özcan und Tran/produkte.html">Produkte</a></li>
+                      <li><a href="/Özcan und Tran/überuns.html">Über uns</a></li>
+                      <li><a href="/Özcan und Tran/Kontakt.html">Kontakt</a></li>
+                      <li><a href="/Özcan und Tran/anmelden.html">Anmelden</a></li>
+                      <li class="search-container">
+                      <button name="enter" type="submit"><i class="fa fa-search"></i></button>
+                      <input name="search" type="text" placeholder="Search.." name="search">
+                    </li>
+            </ul>
+              </nav>
+          </div>
+          <div class="menu-bar">
+              <button><i></i></button>
+          </div>
+      </div>
+  </header>
 
+<<<<<<< HEAD
 <div class="topnav" id="myTopnav">
   <a href="/Özcan und Tran/startseiteOT.html" class="active"><b>Home</b></a>
   <a href="/Özcan und Tran/news.html" target="_self"><b>News</b></a>
@@ -97,30 +128,37 @@ input[type=submit]:hover {
     </form>
   </div>
   
+=======
+>>>>>>> TNTran
   <script>
-  function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
-  </script>
-</div>
+      const theBody = document.querySelector('body');
+      const openNav = document.querySelector('.menu-bar button');
+      const closeNav = document.querySelector('.close-nav button');
+      const Navbar = document.querySelector('.navbar');
+      const slideshowcontainer = document.querySelector('.slideshowcontainer')
+      
+      function bodyScroll(){
+          if(Navbar.classList.contains('show')){
+              theBody.classList.add('hide-scroll');
+          }
+          else if(theBody.classList.contains('hide-scroll')){
+              theBody.classList.remove('hide-scroll')
+              slideshowcontainer.classList.remove('hide-scroll');
+          }
+      }
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+      function showHide(){
+          Navbar.classList.toggle('show');
+          bodyScroll();
+      }
+
+      openNav.onclick = showHide;
+      closeNav.onclick = showHide;
+  </script>
+  
 <h2>Send us a message</h2>
 
-<div class="container">
+<div class="Message">
   <table>
     <tr>
       <td>

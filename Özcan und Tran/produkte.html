@@ -11,66 +11,58 @@
 
 
 <body>
+  <header>
+      <div class="wrapper">
+          </div>
+          <div class="navbar">
+              <div class="close-nav"><button>×</button></div>
+              <nav>
+                  <ul>
+                      <li class="logo"><a href="#"><img src="/Özcan und Tran/Bilder/logonavi.png"></a></li>
+                      <li><a href="/Özcan und Tran/startseiteOT.html">Home</a></li>
+                      <li><a href="/Özcan und Tran/news.html">News</a></li>
+                      <li><a href="/Özcan und Tran/produkte.html">Produkte</a></li>
+                      <li><a href="/Özcan und Tran/überuns.html">Über uns</a></li>
+                      <li><a href="/Özcan und Tran/Kontakt.html">Kontakt</a></li>
+                      <li><a href="/Özcan und Tran/anmelden.html">Anmelden</a></li>
+                      <li class="search-container">
+                      <button name="enter" type="submit"><i class="fa fa-search"></i></button>
+                      <input name="search" type="text" placeholder="Search.." name="search">
+                    </li>
+            </ul>
+              </nav>
+          </div>
+          <div class="menu-bar">
+              <button><i></i></button>
+          </div>
+      </div>
+  </header>
 
-<div class="topnav" id="myTopnav">
-  <a href="/Özcan und Tran/startseiteOT.html" class="active"><b>Home</b></a>
-  <a href="/Özcan und Tran/news.html" target="_self"><b>News</b></a>
-  
-  <div class="dropdown">
-    <button class="dropbtn"><b>Produkte</b>
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="lebensmitteln.html">Lebensmitteln</a>
-      <a href="mobeln.html">Möbeln</a>
-      <a href="gerat.html">Geräte</a>
-      <a href="haushalt.html">Haushalt</a>
-    </div>
-  </div> 
-  <a href="/Özcan und Tran/überuns.html" ><b>Über uns</b></a>
-  <a href="/Özcan und Tran/Kontakt.html" target="_self"><b>Kontakt </b></a>
-  <a href="/Özcan und Tran/anmelden.html" target="_self"><b>Anmelden</b></a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  <input class="searchbar" type="text" placeholder = "Search">
-  <button class="searchsymbol" type="submit"><i class="fa fa-search"></i></button>
-  <button class="open-button" onclick="openForm()">Anmelden</button>
-
-  <div class="form-popup" id="myForm">
-    <form action="/action_page.php" class="form-container">
-      <h1>Anmelden</h1>
-  
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Ihre Email" name="email" required>
-  
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder= "Ihr Password" name="psw" required>
-  
-      <button type="submit" class="btn">Anmelden</button>
-      <button type="button" class="btn cancel" onclick="closeForm()">Schließen</button>
-    </form>
-  </div>
-  
   <script>
-  function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
+      const theBody = document.querySelector('body');
+      const openNav = document.querySelector('.menu-bar button');
+      const closeNav = document.querySelector('.close-nav button');
+      const Navbar = document.querySelector('.navbar');
+      const slideshowcontainer = document.querySelector('.slideshowcontainer')
+      
+      function bodyScroll(){
+          if(Navbar.classList.contains('show')){
+              theBody.classList.add('hide-scroll');
+          }
+          else if(theBody.classList.contains('hide-scroll')){
+              theBody.classList.remove('hide-scroll')
+              slideshowcontainer.classList.remove('hide-scroll');
+          }
+      }
+
+      function showHide(){
+          Navbar.classList.toggle('show');
+          bodyScroll();
+      }
+
+      openNav.onclick = showHide;
+      closeNav.onclick = showHide;
   </script>
-</div>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
+  
 </body>
 </html>
