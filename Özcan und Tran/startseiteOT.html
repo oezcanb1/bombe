@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Startseite</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Özcan und Tran/startseite.css">
+
 <style>
 .Logo {
-  width:  1200px;
-  height: 700px;
+  width:  400px;
+  height: 400px;
   display: block;
   margin-top:8px;
   margin-left: auto;
@@ -18,18 +19,8 @@
   
   
   }
-                                            /*Begin Worts*/
-  #Beginwords{
-    margin-top: 8px;
-    padding: 50px;
-    background-color: #f7f7eb;
+
   
-   
-  }
-  .Welcome{
-    font-size: 25px;
-    font-weight: 300px;
-  }
 
 
 </style>
@@ -88,13 +79,7 @@
 </div>
 
 <div id="Logo">
-  <img class="Logo" src="/Özcan und Tran/Bilder/homepage1.png" >
-</div>
-
-<div id="Beginwords" >
- </h1><p class="Welcome"><h1>Willkommen zur unsere Webseite</h1> </p>
- <p class="Begin"> </p>
- <p> Özcan und Tran</p> 
+  <img class="Logo" src="/Özcan und Tran/Bilder/logoqualicheck.jpg" >
 </div>
 
 <script>
@@ -108,5 +93,62 @@ function myFunction() {
 }
 </script>
 
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="/Özcan und Tran/Bilder/homepage1.png" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="/Özcan und Tran/Bilder/Wie funktiert unsere webseite.png" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+  
+  
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
 </body>
 </html>
