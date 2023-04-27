@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-  #Nname, select, textarea, #Vname,#Email {
+  #Nname, select, textarea, #Vname,#Email,#Password,#Bname {
   font-family: Arial;
   font-size:15px;
   width: 100%; /* Full width */
@@ -91,7 +91,7 @@ input[type=submit]:hover {
   
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder= "Ihr Password" name="psw" required>
-  
+
       <button type="submit" class="btn">Anmelden</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Schließen</button>
     </form>
@@ -118,6 +118,16 @@ function myFunction() {
   }
 }
 </script>
+<script>
+  function myFunction() {
+    var x = document.getElementById("Password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+  </script>
 
 
 <h2>Anmelden</h2>
@@ -127,23 +137,27 @@ function myFunction() {
     <tr>
       <td>
         <form action="/action_page.php">
-          <label for="Nname">Nachname:</label>
-          <input type="text" id="Nname" name="Nachname" placeholder="Ihr Nachname..">
+          <label for="Nname">Nachname (*):</label>
+          <input type="text" id="Nname" name="Nachname" placeholder="Ihr Nachname.." required>
       
           <label for="Vname">Vorname:</label>
           <input type="text" id="Vname" name="Vname" placeholder=" Ihr Vorname..">
           <br>
           <br>
-          <label for="Email">Email:</label>
-          <input type="email" id="Email" name="Email" placeholder="Ihr Email">
+          <label for="Bname">Benutzername (*):</label>
+          <input type="text" id="Bname" name="Bname" placeholder=" Benutzername.." required>
           <br>
           <br>
-          <label for="Thema">Thema Ihr Nachricht:</label>
-          <textarea id="Thema" name="Thema" placeholder="Thema Ihr Nachricht"></textarea>
+          <label for="Email">Email (*):</label>
+          <input type="email" id="Email" name="Email" placeholder="Ihr Email" required>
           <br>
-          <label for="Nachricht">Nachricht:</label>
-          <textarea id="Nachricht" name="nachricht" placeholder="Bitte schreiben Sie Ihre Nachrichten" style="height:200px"></textarea>
-      
+          <br>
+          <label for="Password">Password (*):</label>
+          <input type="password" id="Password" name="Password" placeholder="Password" minlength="6" required>
+          <br>
+          <input type="checkbox" onclick="myFunction()">Password zeigen
+          <br>
+          <br>
           <input type="submit" name="Senden" value="Senden">
         </form>
       </td>
