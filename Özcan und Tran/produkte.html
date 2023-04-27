@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Startseite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="/Özcan und Tran/startseiteOT.html" class="active"><b>Home</b></a>
+  <a href="/Özcan und Tran/news.html" target="_blank"><b>News</b></a>
+  
+  <div class="dropdown">
+    <button class="dropbtn"><b>Produkte</b>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Lebensmitteln</a>
+      <a href="#">Möbeln</a>
+      <a href="#">Geräte</a>
+      <a href="#">Haushalt</a>
+    </div>
+  </div> 
+  <a href="/Özcan und Tran/überuns.html" ><b>Über uns</b></a>
+  <a href="/Özcan und Tran/Kontakt.html" target="_blank"><b>Kontakt </b></a>
+  <a href="/Özcan und Tran/anmelden.html" target="_blank"><b>Anmelden</b></a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  <input class="searchbar" type="text" placeholder = "Search">
+  <button class="searchsymbol" type="submit"><i class="fa fa-search"></i></button>
+  <button class="open-button" onclick="openForm()">Anmelden</button>
+
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Anmelden</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Ihre Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder= "Ihr Password" name="psw" required>
+  
+      <button type="submit" class="btn">Anmelden</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Schließen</button>
+    </form>
+  </div>
+  
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
