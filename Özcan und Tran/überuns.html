@@ -1,75 +1,142 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Über uns</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Qualicheck</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+
+  <!-- font wesome stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="responsive.css" rel="stylesheet" />
 </head>
 
-
-<body>
-
-  <body>
-    <header>
-        <div class="wrapper">
-            </div>
-            <div class="navbar">
-                <div class="close-nav"><button>×</button></div>
-                <nav>
-                    <ul>
-                        <li class="logo"><a href="#"><img src="/Özcan und Tran/Bilder/logonavi.png"></a></li>
-                        <li><a href="/Özcan und Tran/startseiteOT.html">Home</a></li>
-                        <li><a href="/Özcan und Tran/news.html">News</a></li>
-                        <li class="dropdown"><a href="/Özcan und Tran/produkte.html">Produkte</a></li>
-                        <ul class="dropdowninhalt">
-                        <li><a href="#">Lebensmitteln</a></li>  
-                        <li><a href="#">Möbeln</a></li> 
-                        <li><a href="#">Geräte</a></li>   
-                        <li><a href="#">Haushalt</a></li>  
-                        </ul>
-                        <li><a href="/Özcan und Tran/überuns.html">Über uns</a></li>
-                        <li><a href="/Özcan und Tran/Kontakt.html">Kontakt</a></li>
-                        <li><a href="/Özcan und Tran/anmelden.html">Anmelden</a></li>
-                        <li class="search-container">
-                        <button name="enter" type="submit"><i class="fa fa-search"></i></button>
-                        <input name="search" type="text" placeholder="Search.." name="search">
-                      </li>
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand mr-5" href="startseiteOT.html">
+            <img src="Bilder/logonavi.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="startseiteOT.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="überuns.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html"> Service </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Kontakt.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="anmelden.html">Anmelden</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="produkte.html">Produkte</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="produkte.html">Contact us</a>
+                </li>
               </ul>
-                </nav>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
             </div>
-            <div class="menu-bar">
-                <button><i></i></button>
-            </div>
-        </div>
+          </div>
+        </nav>
+      </div>
     </header>
-  
-    <script>
-        const theBody = document.querySelector('body');
-        const openNav = document.querySelector('.menu-bar button');
-        const closeNav = document.querySelector('.close-nav button');
-        const Navbar = document.querySelector('.navbar');
-        const slideshowcontainer = document.querySelector('.slideshowcontainer')
-        
-        function bodyScroll(){
-            if(Navbar.classList.contains('show')){
-                theBody.classList.add('hide-scroll');
-            }
-            else if(theBody.classList.contains('hide-scroll')){
-                theBody.classList.remove('hide-scroll')
-                slideshowcontainer.classList.remove('hide-scroll');
-            }
-        }
-  
-        function showHide(){
-            Navbar.classList.toggle('show');
-            bodyScroll();
-        }
-  
-        openNav.onclick = showHide;
-        closeNav.onclick = showHide;
-    </script>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Über uns
+              </h2>
+            </div>
+            <p>
+              Wir arbeiten für Sie, um Ihren Einkauf sicherer und sinnvoller zu gestalten. 
+              Wir werden uns bemühen, Komfort für alle zu bieten.
+            </p>
+            <a href="">
+              Erste Schritte
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="Bilder/logoqualicheck.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding">
+    <div class="footer_contact">
+      <div class="heading_container">
+        <h2>
+          Kontakt
+        </h2>
+      </div>
+      <div class="box">
+        <a href="" class="img-box">
+          <img src="Bilder/location.png" alt="" class="img-1">
+          <img src="Bilder/location-o.png" alt="" class="img-2">
+        </a>
+        <a href="" class="img-box">
+          <img src="Bilder/call.png" alt="" class="img-1">
+          <img src="Bilder/call-o.png" alt="" class="img-2">
+        </a>
+        <a href="" class="img-box">
+          <img src="Bilder/envelope.png" alt="" class="img-1">
+          <img src="Bilder/envelope-o.png" alt="" class="img-2">
+        </a>
+      </div>
+    </div>
+
+
+  </section>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
 </body>
 </html>
