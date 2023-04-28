@@ -21,7 +21,9 @@
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
+  margin-left: 50px;
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
   
 }
 
@@ -92,15 +94,13 @@ input[type=submit]:hover {
       const openNav = document.querySelector('.menu-bar button');
       const closeNav = document.querySelector('.close-nav button');
       const Navbar = document.querySelector('.navbar');
-      const slideshowcontainer = document.querySelector('.slideshowcontainer')
-      
+
       function bodyScroll(){
           if(Navbar.classList.contains('show')){
               theBody.classList.add('hide-scroll');
           }
           else if(theBody.classList.contains('hide-scroll')){
               theBody.classList.remove('hide-scroll')
-              slideshowcontainer.classList.remove('hide-scroll');
           }
       }
 

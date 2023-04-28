@@ -117,11 +117,7 @@ header .logo img {
   border-color: #222222;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 30px;
-}
+
 
 @media (min-width: 550px) {
   .navbar {
