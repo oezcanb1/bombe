@@ -17,7 +17,7 @@
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
+  border-radius: 7px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
@@ -45,7 +45,7 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
- 
+  margin-left: 200px;
 }
 .Logo {
   width:  400px;
@@ -114,12 +114,10 @@ input[type=submit]:hover {
   </script>
   
 
-<h2 style="margin-left:10px;">Anmelden</h2>
+
 
 <div class="formular">
-  <table>
-    <tr>
-      <td>
+        <p style ="font-size:40px;margin-left: 100px;margin-bottom:50px">Anmelden</p>
         <form action="/action_page.php">
           <label for="Nname">Nachname (*):</label>
           <input type="text" id="Nname" name="Nachname" placeholder="Ihr Nachname.." required>
@@ -141,17 +139,18 @@ input[type=submit]:hover {
           <br>
           <input type="submit" name="Senden" value="Senden">
         </form>
-      </td>
-      <td>
-        <div id="Logo">
-          <img class="Logo" src="/Özcan und Tran/Bilder/logoqualicheck.jpg" >
-        </div>
-      </td>
-    </tr>
-  </table>
 
 </div>
-</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("Password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 </body>
 <body>
  

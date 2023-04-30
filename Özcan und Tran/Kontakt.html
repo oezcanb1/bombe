@@ -12,18 +12,20 @@
 <link rel="stylesheet" href="/Özcan und Tran/drop.css">
 </head>
 <style>
+
   #Nname, select, textarea, #Vname,#Email {
   font-size:15px;
-  width: 100%; /* Full width */
+  width: 1000px; /* Full width */
   padding: 12px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  margin-left: 50px;
+  margin-left: 100px;
+  margin-right: 125px;
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-
+ 
   
 }
 
@@ -47,6 +49,7 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  margin-left: 200px;
  
 }
 .Logo {
@@ -55,7 +58,7 @@ input[type=submit]:hover {
   display: block;
   margin-top:8px;
   margin-left: 300px;
-  margin-right:75px;
+  margin-right:125px;
   
   
   }
@@ -113,13 +116,12 @@ input[type=submit]:hover {
       closeNav.onclick = showHide;
   </script>
   
-<h2 style ="margin-left: 20px;">Send us a message</h2>
+
  
 <div class="Message">
-  <table>
-    <tr>
-      <td>
+  <p style ="font-size:40px;margin-left: 100px;margin-bottom:50px">Send us a message</p>
         <form action="/action_page.php">
+          
           <label for="Nname">Nachname:</label>
           <input type="text" id="Nname" name="Nachname" placeholder="Ihr Nachname..">
       
@@ -128,6 +130,7 @@ input[type=submit]:hover {
           <br>
           <br>
           <label for="Email">Email:</label>
+          <br>
           <input type="email" id="Email" name="Email" placeholder="Ihr Email">
           <br>
           <br>
@@ -139,14 +142,6 @@ input[type=submit]:hover {
       
           <input type="submit" name="Senden" value="Senden">
         </form>
-      </td>
-      <td>
-        <div id="Logo">
-          <img class="Logo" src="/Özcan und Tran/Bilder/logoqualicheck.jpg" >
-        </div>
-      </td>
-    </tr>
-  </table>
   <body>
  
     <ul id="social-sidebar">
