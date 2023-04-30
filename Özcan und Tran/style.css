@@ -103,6 +103,7 @@ header .logo img {
   display: block;
   border-top: 3px solid #444444;
   border-bottom: 3px solid #444444;
+  position: relative;
 }
 .menu-bar i::after {
   display: block;

@@ -103,8 +103,14 @@ img {vertical-align: middle;}
 }
 
 
-</style>
 
+.produktliste{
+  display: block;
+  position:absolute;
+}
+
+</style>
+                  <!--Top Navigation mit Logo-->
 <body>
   <header>
       <div class="wrapper">
@@ -116,8 +122,15 @@ img {vertical-align: middle;}
                       <li class="logo"><a href="#"><img src="/Özcan und Tran/Bilder/logonavi.png"></a></li>
                       <li><a href="/Özcan und Tran/startseiteOT.html">Home</a></li>
                       <li><a href="/Özcan und Tran/news.html">News</a></li>
-                      <li class="dropdown"><a href="/Özcan und Tran/produkte.html">Produkte</a></li>
-                      
+                      <li><a href="/Özcan und Tran/produkte.html">Produkte<i class="fa fa-caret-down"></i></a></li>
+                    <div class="produktliste">
+                      <ul>
+                      <li>1a</li>
+                      <li>1b</li>
+                      <li>1c</li>
+                    </ul>
+                    </div>
+                  </ul>    
                       <li><a href="/Özcan und Tran/überuns.html">Über uns</a></li>
                       <li><a href="/Özcan und Tran/Kontakt.html">Kontakt</a></li>
                       <li><a href="/Özcan und Tran/anmelden.html">Anmelden</a></li>
@@ -237,9 +250,6 @@ function myFunction() {
      </li>
      <li>
        <a class="entypo-facebook"><span>Facebook</span></a>
-     </li>
-     <li>
-       <a class="entypo-gplus"><span>Google+</span></a>
      </li>
      <li>
        <a class="entypo-dribbble"><span>Dribbble</span></a>
