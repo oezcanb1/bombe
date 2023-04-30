@@ -148,17 +148,16 @@ box-sizing: border-box;
 }
 
 /* Style the search field */
-form.example input[type=text] {
-padding: 10px;
-font-size: 17px;
-border: 1px solid grey;
-float: left;
-width: 80%;
-background: #f1f1f1;
-}
-
-/* Style the submit button */
-form.searchbar button {
+ /* Style the submit button */
+ form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #314453;
+  }
+form.enter{
 float: left;
 width: 20%;
 padding: 10px;
@@ -170,12 +169,12 @@ border-left: none; /* Prevent double borders */
 cursor: pointer;
 }
 
-form.searchbar button:hover {
+form.enter:hover {
 background: #0b7dda;
 }
 
 /* Clear floats */
-form.searchbar::after {
+form.search::after {
 content: "";
 clear: both;
 display: table;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Startseite</title>
-    <link rel="stylesheet" href="/Özcan und Tran/style.css">
+    <link rel="stylesheet" href="/Özcan und Tran/startseite.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <link rel="stylesheet" href="/Özcan und Tran/drop.css">
@@ -104,17 +104,11 @@ img {vertical-align: middle;}
 
 
 
-.produktliste{
-  display: block;
-  position:absolute;
-}
 
 </style>
                   <!--Top Navigation mit Logo-->
 <body>
-  <header>
-      <div class="wrapper">
-          </div>
+  
           <div class="navbar">
               <div class="close-nav"><button>×</button></div>
               <nav>
@@ -122,33 +116,24 @@ img {vertical-align: middle;}
                       <li class="logo"><a href="#"><img src="/Özcan und Tran/Bilder/logonavi.png"></a></li>
                       <li><a href="/Özcan und Tran/startseiteOT.html">Home</a></li>
                       <li><a href="/Özcan und Tran/news.html">News</a></li>
-                      <li><a href="/Özcan und Tran/produkte.html">Produkte<i class="fa fa-caret-down"></i></a></li>
-                    <div class="produktliste">
-                      <ul>
-                      <li>1a</li>
-                      <li>1b</li>
-                      <li>1c</li>
-                    </ul>
-                    </div>
-                  </ul>    
+                      <li class="expandable_li"><a href="/Özcan und Tran/produkte.html">Produkte</a>
+                      <ul class="product_list">
+                      <li>Lebensmitteln</li>
+                      <li>Geräte</li>
+                      <li>Hausehalt</li>
+                      <li>Möbeln</li>
+                      </ul>
+                    </li>   
                       <li><a href="/Özcan und Tran/überuns.html">Über uns</a></li>
                       <li><a href="/Özcan und Tran/Kontakt.html">Kontakt</a></li>
                       <li><a href="/Özcan und Tran/anmelden.html">Anmelden</a></li>
-                      <li class="search-container">
-                      <button name="enter" type="submit"><i class="fa fa-search"></i></button>
-                      <input name="search" type="text" placeholder="Search.." name="search">
-                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-                      <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-                      <link rel="stylesheet" href="/Özcan und Tran/drop.css">
-                    </li>
             </ul>
               </nav>
           </div>
           <div class="menu-bar">
               <button><i></i></button>
           </div>
-      </div>
-  </header>
+     
 
   <script>
       const theBody = document.querySelector('body');
