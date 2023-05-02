@@ -13,8 +13,8 @@
 </head>
 <style>
   #Nname, select, textarea, #Vname,#Email,#Password,#Bname {
-  font-size:15px;
-  width: 100%; /* Full width */
+  font-size:17px;
+  width: 1000px; /* Full width */
   padding: 12px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
   border-radius: 7px; /* Rounded borders */
@@ -120,19 +120,24 @@ input[type=submit]:hover {
 <div class="formular">
         <p style ="font-size:40px;margin-left: 100px;margin-bottom:50px">Anmelden</p>
         <form action="/action_page.php">
-          <label for="Nname">Nachname (*):</label>
+          <label for="Nname">Nachname (*): </label>
+          <br>
           <input type="text" id="Nname" name="Nachname" placeholder="Ihr Nachname.." required>
-      
-          <label for="Vname">Vorname:</label>
+          <br>
+          <label for="Vname">Vorname: </label>
+          <br>
           <input type="text" id="Vname" name="Vname" placeholder=" Ihr Vorname..">
-          
-          <label for="Bname">Benutzername (*):</label>
+          <br>
+          <label for="Bname">Benutzername (*): </label>
+          <br>
           <input type="text" id="Bname" name="Bname" placeholder=" Benutzername.." required>
-          
-          <label for="Email">Email (*):</label>
+          <br>
+          <label for="Email">Email (*): </label>
+          <br>
           <input type="email" id="Email" name="Email" placeholder="Ihr Email" required>
-          
-          <label for="Password">Password (*):</label>
+          <br>
+          <label for="Password">Password (*): </label>
+          <br>
           <input type="password" id="Password" name="Password" placeholder="Password" minlength="6" required>
           <br>
           <input type="checkbox" onclick="myFunction()">Password zeigen
