@@ -12,7 +12,11 @@
   font-size: 22px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
+<<<<<<< HEAD
   right: 600px;
+=======
+  right: 650px;
+>>>>>>> d00ea8c71e7785fa8cfd09ea04d35423ccaded97
 }
 html{
   height:100%;
@@ -31,12 +35,19 @@ nav{
   
 }
 nav .logo{
+<<<<<<< HEAD
   height: 30px;
   display: block;
   position: left;
   position: absolute;
   left: 100px;
 
+=======
+  margin-left:10px ;
+  height: 30px;
+  display: flex;
+  left:800px;
+>>>>>>> d00ea8c71e7785fa8cfd09ea04d35423ccaded97
 }
 nav ul{
   height: 100%;
